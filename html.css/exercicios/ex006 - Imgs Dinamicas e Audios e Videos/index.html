@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acomplamentos</title>
+</head>
+<body>
+    <h1>Imgs Dinamicas</h1>
+    <p>Abrir a imagem em varios dispositivos, seja eles pc, notebook, celulares.</p>
+    <picture>
+        <!-- Mudar Min para Max-Width no Source-->
+        <source media="(max-width: 750px)" srcset="imagens/pequeno" type="image/foto-p">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/foto-m">
+        <img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+
+<h1>Reproduzindo Audio</h1>
+<p>Vamos aprender a reproduzir audios em html</p>
+<audio src="midias/2 Hearts - Patrick Patrikios.mp3" controls></audio>
+<P>Usar (autoplay) para audio comaçar assim que entrar na pagina</P>
+<!-- MP3 WAV OGG -->
+
+<h1>Inserindo Videos Hospedados Localmente</h1>
+<p>este video esta hospedado no meu propio servidor</p>
+<video width="560" poster="imagens/logo-video.jpg" controls loop>
+<source src="videos/file.mp4" type="video/mp4">
+<source src="videos/file2.m4v" type="video/m4v">
+<source src="videos/file3.webm" type="video/webm">
+<p>seu navegador nao tem compatibilidade com reprodutor de videos.</p>
+</video>
+
+<h1>Inserindo Videos do Youtube</h1>
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/m226f2reF28" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+ picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
